@@ -30,7 +30,7 @@ const addurls = (req, res) => {
       });
     })
     .catch(() => {
-      res.status(404).json({ error: "could not add the url" });
+      res.status(404).json({ error: "Error while adding url" });
     });
 };
 
