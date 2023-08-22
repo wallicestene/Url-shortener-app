@@ -1,7 +1,8 @@
 const express = require("express")
-const { getUrls } = require("../controllers/urlController")
+const { getUrls, addurls } = require("../controllers/urlController")
 const router = express.Router()
 
-router.get("/urls", getUrls)
+router.get("/:shortId", getUrls)
+router.post("/urls", addurls)
 
 module.exports = router
