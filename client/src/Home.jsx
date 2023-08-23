@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import pic1 from "./assets/pic1.jpeg";
 import { toast } from "react-hot-toast";
+
 function Home() {
   const [longUrl, setlongUrl] = useState("");
   const [ShortUrl, setShortUrl] = useState("");
