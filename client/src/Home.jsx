@@ -7,7 +7,7 @@ function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (longUrl) {
-      fetch("http://localhost:3000/urls", {
+      fetch("https://url-shortener-r10f.onrender.com/urls", {
         method: "POST",
         body: JSON.stringify({ longUrl }),
         headers: {
