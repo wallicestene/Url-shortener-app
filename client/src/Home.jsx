@@ -31,9 +31,9 @@ function Home() {
     <div className=" relative h-screen flex flex-col items-center object-center bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-400 to-blue-800">
       <img src={pic1} alt="" className=" h-96 w-screen object-cover" />
       <div className=" absolute top-1/2 -translate-y-1/2 flex flex-col gap-10">
-        <div className="rounded-md py-2 px-3 grid place-items-center text-center  backdrop-blur-sm bg-white/60">
-          <h1 className=" font-Raleway font-bold text-2xl">TinyUrl</h1>
-          <p>TinyUrl is a free tool to shorten a url.</p>
+        <div className="rounded-md tracking-wide font-Poppins py-2 px-3 grid place-items-center text-center  backdrop-blur-sm bg-white/60">
+          <h1 className=" font-Raleway  font-bold text-2xl">TinyUrl</h1>
+          <p >TinyUrl is a free tool to shorten a url.</p>
           <p>
             Use our URL Shortener to create a rememberable and easy-to-share URL
           </p>
@@ -41,7 +41,7 @@ function Home() {
         <div>
           <form
             onSubmit={handleSubmit}
-            className=" bg-white shadow-lg py-3 px-2 w-full flex flex-col items-center gap-4 rounded-md"
+            className=" bg-white shadow-lg py-3 px-2 w-full flex flex-col items-center gap-4 rounded-md font-Poppins"
           >
             <div className=" w-full flex items-center gap-4">
               <input

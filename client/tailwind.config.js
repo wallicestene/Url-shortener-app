@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Raleway: "Raleway"
+        Raleway: "Raleway",
+        Montserrat: "Montserrat",
+        Poppins: "Poppins"
       }
     },
   },
