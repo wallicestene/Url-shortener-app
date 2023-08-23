@@ -17,7 +17,6 @@ function Home() {
       })
         .then((result) => result.json())
         .then((data) => {
-          console.log(data);
           setShortUrl(data.shortUrl);
         });
     }
@@ -42,7 +41,7 @@ function Home() {
         <div>
           <form
             onSubmit={handleSubmit}
-            className=" bg-white shadow-lg py-3 px-2 w-full flex flex-col items-center gap-4 rounded-md font-Poppins"
+            className=" bg-white shadow-lg py-4 px-2 w-full flex flex-col items-center gap-4 rounded-md font-Poppins"
           >
             <div className=" w-full flex items-center gap-4">
               <input
