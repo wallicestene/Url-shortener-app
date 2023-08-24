@@ -17,8 +17,11 @@ function Home() {
       })
         .then((result) => result.json())
         .then((data) => {
-          setShortUrl(data.shortUrl);
-        });
+          setShortUrl(data.shortUrl)
+        })
+        .catch(error => {
+          console.log('Error:', error.message)
+        })
     }
     setlongUrl("");
   };
