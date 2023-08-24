@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import pic1 from "./assets/pic1.jpeg";
+import pic2 from "./assets/pic2.jpg";
 import { toast } from "react-hot-toast";
 
 function Home() {
@@ -32,9 +33,12 @@ function Home() {
   };
   return (
     <div className=" relative h-screen flex flex-col items-center object-center bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-400 to-blue-800">
-      <img src={pic1} alt="" className=" h-96 w-screen object-cover" />
-      <div className=" absolute top-1/2 -translate-y-1/2 flex flex-col gap-10">
-        <div className="rounded-md tracking-wide font-Poppins py-2 px-3 grid place-items-center text-center  backdrop-blur-sm bg-white/60">
+      <div className=" h-1/2">
+      <img src={pic1} alt="" className=" h-full w-screen object-cover" />
+      <img src={pic2} alt="" className=" h-full w-screen object-cover" />
+      </div>
+      <div className=" absolute top-1/2 -translate-y-1/2 flex flex-col gap-5">
+        <div className="rounded-md tracking-wide font-Poppins py-2 px-3 grid place-items-center text-center  backdrop-blur-sm bg-white/60 shadow-lg">
           <h1 className=" font-Raleway  font-bold text-2xl">TinyUrl</h1>
           <p >TinyUrl is a free tool to shorten a url.</p>
           <p>
