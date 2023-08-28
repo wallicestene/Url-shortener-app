@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import pic1 from "./assets/pic1.jpeg";
 import pic2 from "./assets/pic2.jpg";
 import { toast } from "react-hot-toast";
+import FooterCard from "./FooterCard";
 
 function Home() {
   const [longUrl, setlongUrl] = useState("");
@@ -84,7 +85,9 @@ function Home() {
               </div>
             )}
           </form>
-          <div></div>
+          <div className=" grid place-items-center my-5" >
+          <FooterCard/>
+          </div>
         </div>
       </div>
     </div>
