@@ -85,7 +85,7 @@ function Home() {
               </div>
             )}
           </form>
-          <div className=" grid place-items-center my-5" >
+          <div className=" grid place-items-center my-10" >
           <FooterCard/>
           </div>
         </div>

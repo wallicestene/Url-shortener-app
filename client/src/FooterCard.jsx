@@ -6,7 +6,7 @@ function FooterCard() {
             <div>
                 <p>Made with ❤️ by <br /> Wallicestene Waweru</p>
                 <a href="http://github.com/wallicestene">
-                    Check out my <span className=' underline text-blue-900'>github</span>
+                    Check out my <span className=' underline text-blue-900'>Github</span>
                 </a>
             </div>
         </footer>
