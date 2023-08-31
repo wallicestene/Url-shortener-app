@@ -3,6 +3,7 @@ import pic1 from "./assets/pic1.jpeg";
 import pic2 from "./assets/pic2.jpg";
 import { toast } from "react-hot-toast";
 import FooterCard from "./FooterCard";
+import {Fade} from "react-awesome-reveal"
 
 function Home() {
   const [longUrl, setlongUrl] = useState("");
@@ -65,6 +66,7 @@ function Home() {
             </div>
             {ShortUrl && (
               <div className=" w-full">
+                <Fade duration={500} direction="top" delay={200}>
                 <p htmlFor="shortUrl" className=" inline-block font-bold tracking-wide">
                   Your TinyUrl:
                 </p>
@@ -77,11 +79,12 @@ function Home() {
                   />
                   <button
                     onClick={copy}
-                    className=" bg-black text-white py-1 px-6 rounded hover:bg-green-800  hover:translate hover:scale-105 transition delay-100 duration-200"
+                    className=" bg-black text-white py-1 px-6 rounded hover:bg-green-700  hover:translate hover:scale-105 transition delay-100 duration-200"
                   >
                     Copy
                   </button>
                 </div>
+                </Fade>
               </div>
             )}
           </form>
