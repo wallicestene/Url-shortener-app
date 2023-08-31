@@ -59,13 +59,13 @@ function Home() {
                 placeholder="Enter the link here"
                 className=" indent-1 w-full h-8 outline-none bg-none border border-black rounded"
               />
-              <button className=" bg-black text-white py-1 px-4 rounded">
+              <button className=" bg-black text-white py-1 px-4 rounded hover:bg-blue-900 hover:translate hover:scale-105 transition delay-100 duration-200">
                 Shorten
               </button>
             </div>
             {ShortUrl && (
               <div className=" w-full">
-                <p htmlFor="shortUrl" className=" inline-block">
+                <p htmlFor="shortUrl" className=" inline-block font-bold tracking-wide">
                   Your TinyUrl:
                 </p>
                 <div className=" my-1 flex w-full items-center gap-4">
@@ -77,7 +77,7 @@ function Home() {
                   />
                   <button
                     onClick={copy}
-                    className=" bg-black text-white py-1 px-6 rounded"
+                    className=" bg-black text-white py-1 px-6 rounded hover:bg-green-800  hover:translate hover:scale-105 transition delay-100 duration-200"
                   >
                     Copy
                   </button>
