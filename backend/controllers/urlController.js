@@ -26,7 +26,7 @@ const addurls = (req, res) => {
   Urls.create({ longUrl, shortId })
     .then((result) => {
       res.status(200).json({
-        shortUrl: `${req.hostname}/${shortId}`,
+        shortUrl: `Tiny/${shortId}`,
       });
     })
     .catch(() => {
