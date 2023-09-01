@@ -11,7 +11,7 @@ function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (longUrl) {
-      fetch("https://url-shortener-r10f.onrender.com/urls", {
+      fetch("https://tinyurl-kdij.onrender.com/urls", {
         method: "POST",
         body: JSON.stringify({ longUrl }),
         headers: {
